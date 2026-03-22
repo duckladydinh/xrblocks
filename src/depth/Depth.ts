@@ -127,9 +127,7 @@ export class Depth {
     // depth buffer UVs using normDepthBufferFromNormView.
     if (this.normDepthBufferFromNormViewMatrices.length > 0) {
       normViewCoord.set(u, v, 0);
-      normViewCoord.applyMatrix4(
-        this.normDepthBufferFromNormViewMatrices[0]
-      );
+      normViewCoord.applyMatrix4(this.normDepthBufferFromNormViewMatrices[0]);
       u = normViewCoord.x;
       v = normViewCoord.y;
     }
@@ -177,9 +175,7 @@ export class Depth {
     // depth buffer UVs using normDepthBufferFromNormView.
     if (this.normDepthBufferFromNormViewMatrices.length > 0) {
       normViewCoord.set(u, v, 0);
-      normViewCoord.applyMatrix4(
-        this.normDepthBufferFromNormViewMatrices[0]
-      );
+      normViewCoord.applyMatrix4(this.normDepthBufferFromNormViewMatrices[0]);
       u = normViewCoord.x;
       v = normViewCoord.y;
     }
